@@ -19,13 +19,13 @@ const App = () => {
 
   return (
     <div>
+      <h2>gd</h2>
       <Header loginok={loginok}/>
       <Routes>
         <Route path='/' element={<ProductAll/>}/>
         <Route path='/login' element={<Login setLoginok={setLoginok}/>}/>
         <Route path='/products/:id' element={<PivateRoute loginok={loginok}/>}/>
       </Routes>
-
     </div>
   )
 } 
